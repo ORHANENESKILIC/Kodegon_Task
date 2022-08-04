@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  background: white;
+  padding: 2%;
+}
+
+.back {
+   background-color: white;
+   margin-bottom: 5%;
+   
+   
+}
+
+.contents{
+
+    width: 90%;
+}
+
+/* Header/Blog Title */
+.header {
+  background: white;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 315px;
+  padding-bottom:30px ;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.cards{
+    width: 1500px;
+    margin-top:20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+.card-footer{
+
+    display: grid;
+    grid-template-columns: auto auto auto ;
+}
+
+.card-footer img.date, p.date {
+    float: left;
+    margin: auto;
+
+}
+
+.card-footer #button{
+    display: inline;
+    margin-left: 50px;
+
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.container {
+  padding: 2px 16px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 600px) {
+    body{
+        width: 375px;
+
+    }
+    .header{
+        background: white;
+
+    }
+    
+    .topnav a{
+        width: 250px;
+    font-size: 14px !important;
+
+    }
+
+    .topnav{
+        display: flex;
+        flex-wrap: nowrap;
+        float: left;
+        width: 100% !important;
+        overflow: hidden;
+        font-size: 14px;
+  }
+    .back{
+        display: block;
+        width: 100%;
+        align-items: center;
+        
+  }
+  
+
+  .card{
+    display:flex;
+    flex-wrap: nowrap;
+    width: 30% ;
+
+  }
+  .card #photo{
+
+    width: 168px !important;
+
+  }
+  .card .card-footer #date{
+    display: none;
+  }
+  .cards{
+    margin-top:20px;
+    display: block;
+
+  }
+
+  .card .container .desc{
+    display: none;
+    
+  }
+  .card .card-footer{
+    display:block !important;
+    
+    
+  }
+  .danger {
+    display: block !important;
+    border-color: #f44336;
+    width: 200px;
+    height: 50px;
+  color: black;
+  background-color: white;
+}
+.titles{
+    font-size: 24px !important;
+}
+
+#desc3 + #desc4 + #desc5{
+    display: none;
+}
+
+
+}
+
+.topnav {
+    width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border-bottom: 3px solid #f1f1f1;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+  color: #000;
+  font-weight: bold;
+  
+}
+
+.titles{
+    border-bottom: 3px solid red;
+    font-weight: bold;
+}
+.danger {
+display: none;
+  border-color: #f44336;
+  color: black;
+  background-color: white;
+}
+.container button{
+    float: left;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+</style>
+</head>
+<body>
+
+<img src="img/Banner.png" class="header"></img>
+
+<div class="topnav">
+    <a class="active" href="#Lorem">Lorem Ipsum</a>
+    <a href="#Dolar">Dolar Sit Amet</a>
+    <a  href="#Consectetur">Consectetur adipiscing elit</a>
+  </div>
+
+<br>
+<br>
+<br>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="back">
+      <a class="titles" style="font-size: 36px;">Lorem Ipsum</a>
+    
+        <div class="contents">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mi odio, mattis in ipsum quis, egestas rhoncus sapien. Aliquam lacinia vitae nibh blandit semper. Pellentesque congue, dui quis dictum tempor, diam magna bibendum erat, in tempus dui purus sit amet lectus.</p>
+
+            <p>Aenean consectetur vulputate laoreet. Sed sed mauris pretium, convallis ex ac, rutrum purus. Quisque tempus sollicitudin mi ut pulvinar. Nulla congue erat enim, et consequat nisl pharetra egestas. Fusce nec lobortis tellus, non mattis dui. Nulla condimentum porta pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            
+            <p id="desc3"> ornare rhoncus ullamcorper. Duis elementum malesuada ante eu gravida. Phasellus faucibus tincidunt molestie. Praesent feugiat bibendum ex, aliquet ultrices justo fringilla eget. Aliquam eget placerat tellus. Maecenas ac sollicitudin mauris, sit amet mollis dolor. Ut non semper odio, non blandit dui. Donec mollis sapien ac enim pretium, at interdum est vestibulum. Praesent porttitor, libero id commodo vestibulum, quam velit tristique magna, vitae commodo urna quam a sapien. Proin sed ipsum vel mauris ultrices fringilla. Fusce pulvinar ex massa, vitae pretium est aliquet sed. Suspendisse finibus nec ipsum ac ultricies. Phasellus interdum vulputate enim eget aliquet.</p>
+            
+            <p id="desc4"> Sed a mi pretium, posuere sem et, malesuada mauris. Vivamus ac sapien vel lectus cursus maximus vel vitae lacus. Praesent elementum mauris iaculis massa fringilla, vitae consequat turpis ullamcorper. Integer commodo sit amet massa id porta. Ut vehicula varius dui, sit amet semper mi malesuada vel. Nunc euismod sapien leo, sodales viverra ipsum lacinia venenatis. Mauris ac nunc neque. Nulla sed eros purus. Nullam non convallis justo, sit amet semper lorem. Maecenas sit amet tellus posuere, sollicitudin quam eu, sagittis lacus.</p>
+            
+            <p id="desc5">Curabitur commodo congue consectetur. Maecenas condimentum ligula nunc, id varius tortor dictum vel. Vestibulum nisl nisl, laoreet sit amet aliquet eget, laoreet vel eros. Nulla facilisi. Sed sollicitudin augue vitae ligula ullamcorper, et fermentum felis egestas. Fusce egestas lacus ex, eu vulputate risus dapibus et. Cras et elementum augue. Suspendisse sit amet tristique libero. </p>
+        </div>
+        <div class="btn">
+        <center><button class="btn danger">YAZININ DEVAMI +</button></center>
+        </div>
+    </div>
+        <img class="back" src="img/video.png" alt=""><br>
+        <a class="titles" style="font-size: 40px;">Suspendisse Tempus </a>
+    <div class="cards">
+        <div class="card">
+            <img id="photo" src="img/1.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Lorem ipsum</strong> <br> <span style="font-size:14px ;">Hüsnü Taner</span></p>
+              <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit magna dui, eget ultrices dui euismod in.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <button><img id="button" src="img/Frame 1.png" alt=""></button>
+                </span>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img id="photo" src="img/2.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Nulla semper metus </strong> <br> <span style="font-size:14px ;">Mustafa Serkan Tiryaki</span></p>
+              <p class="desc">Nulla semper metus aliquam, condimentum odio vitae, sodales mauris. Donec congue leo eu libero ultricies tempor. Duis commodo lacus eget felis volutpat molestie. Sed at pharetra mauris. Ut eu lorem placerat, tempus velit in, feugiat libero.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <img id="button" src="img/Frame 1.png" alt="">
+                </span>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img id="photo" src="img/3.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Suspendisse tempus dignissim lacus ac tincidunt</strong> <br> <span style="font-size:14px ;">Kerim Değirmenci </span></p>
+              <p class="desc">Nam semper sapien et erat molestie, a porttitor sem volutpat. Suspendisse tempus dignissim lacus ac tincidunt. Donec elementum pharetra orci, nec laoreet felis facilisis nec. Mauris ornare fermentum urna. Nunc non elit metus. Praesent sodales in nisi eget volutpat.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <img id="button" src="img/Frame 1.png" alt="">
+                </span>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img id="photo" src="img/1.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Integer dignissim </strong> <br> <span style="font-size:14px ;">Ebu Bekir Behram </span></p>
+              <p class="desc">Integer nec vulputate libero. Donec at sollicitudin nibh. Nullam viverra egestas lorem, sed aliquet risus efficitur eu. Nunc tristique nisi ac massa finibus, sit amet blandit lectus suscipit. Mauris quis faucibus lorem. Integer dignissim condimentum orci, vitae pellentesque felis eleifend ac.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <img id="button" src="img/Frame 1.png" alt="">
+                </span>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img id="photo" src="img/3.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Suspendisse tempus dignissim lacus ac tincidunt</strong> <br> <span style="font-size:14px ;">Kerim Değirmenci </span></p>
+              <p class="desc">Nam semper sapien et erat molestie, a porttitor sem volutpat. Suspendisse tempus dignissim lacus ac tincidunt. Donec elementum pharetra orci, nec laoreet felis facilisis nec. Mauris ornare fermentum urna. Nunc non elit metus. Praesent sodales in nisi eget volutpat.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <img id="button" src="img/Frame 1.png" alt="">
+                </span>
+            </div>  
+        </div>
+
+        <div class="card">
+            <img id="photo" src="img/1.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <p style="font-size:18px"><strong>Integer dignissim </strong> <br> <span style="font-size:14px ;">Ebu Bekir Behram </span></p>
+              <p class="desc">Integer nec vulputate libero. Donec at sollicitudin nibh. Nullam viverra egestas lorem, sed aliquet risus efficitur eu. Nunc tristique nisi ac massa finibus, sit amet blandit lectus suscipit. Mauris quis faucibus lorem. Integer dignissim condimentum orci, vitae pellentesque felis eleifend ac.</p> 
+                <span class="card-footer">
+                <img class="date" id="date" src="img/date.png" alt="">
+                <p class="date">10.09.2020 - 10.10.2020</p>
+                <img id="button" src="img/Frame 1.png" alt="">
+                </span>
+            </div>  
+        </div>
+    </div>
+
+      
+  </div>
+</div>
+
+</body>
+</html>
